@@ -55,17 +55,11 @@ tailwind.config = {
   .tracking-luxe{letter-spacing:.26em;}
   .serif-num{font-family:"Cormorant Garamond",Georgia,serif;font-feature-settings:"lnum" 1;}
 
-  /* ---- Materiales (obsidiana + oro) ---- */
-  .ink-field{
-    background:
-      radial-gradient(70% 90% at 84% 6%, rgba(197,164,109,.16), transparent 60%),
-      radial-gradient(60% 70% at 4% 100%, rgba(197,164,109,.09), transparent 62%),
-      linear-gradient(180deg,#161616 0%, #111111 58%, #0C0C0C 100%);
-  }
-  .coal-field{background:linear-gradient(180deg,#161616,#141414);}
-  .grain{position:absolute;inset:0;pointer-events:none;opacity:.4;mix-blend-mode:soft-light;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");}
-  .hairline{height:1px;background:linear-gradient(90deg,transparent,rgba(197,164,109,.55),transparent);}
+  /* ---- Superficies obsidiana (planas, sin degradados) ---- */
+  .ink-field{background:#0E0E0E;}
+  .coal-field{background:#181818;}
+  .grain{display:none;}
+  .hairline{height:1px;background:rgba(197,164,109,.26);}
   .gold-underline{color:#C5A46D;}
 
   /* ---- Reveal (mejora un default ya visible) ---- */
@@ -176,12 +170,14 @@ tailwind.config = {
       </div>
 
       <div class="hero-anim d4 relative">
-        <figure class="relative rounded-3xl overflow-hidden float-card ring-gold border border-paper/10">
-          <img src="especialista-derecho.jpg" alt="Balanza de la justicia y código legal sobre el escritorio de JP Abogados" class="w-full h-[360px] sm:h-[440px] object-cover">
-          <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(17,17,17,0) 38%,rgba(17,17,17,.9) 100%)"></div>
-          <figcaption class="absolute left-5 bottom-5 right-5">
-            <p class="font-display text-2xl text-paper leading-tight">Tu Consejero Legal®</p>
-            <p class="text-sm text-paper/70 mt-0.5">Defensa real, no coyotes.</p>
+        <figure class="rounded-3xl overflow-hidden float-card ring-gold border border-paper/10">
+          <img src="especialista-derecho.jpg" alt="Balanza de la justicia y código legal sobre el escritorio de JP Abogados" class="w-full h-[300px] sm:h-[380px] object-cover">
+          <figcaption class="bg-ink border-t border-white/10 px-5 py-4 flex items-center justify-between gap-3">
+            <div>
+              <p class="font-display text-xl text-paper leading-tight">Tu Consejero Legal®</p>
+              <p class="text-sm text-paper/65 mt-0.5">Defensa real, no coyotes.</p>
+            </div>
+            <span class="text-xs text-gold border border-gold/40 rounded-full px-3 py-1 whitespace-nowrap">Cédula a la vista</span>
           </figcaption>
         </figure>
         <div class="absolute -left-3 sm:-left-6 top-8 w-56 rounded-2xl bg-paper2 text-ink p-4 float-card">
@@ -268,9 +264,8 @@ tailwind.config = {
           </div>
           <a href="#contacto" class="link-cta inline-flex items-center gap-2 mt-8 bg-gold text-ink text-sm font-semibold px-6 py-3 rounded-full hover:bg-paper transition-colors">Hablar con un especialista <span aria-hidden="true">→</span></a>
         </div>
-        <div class="relative min-h-[260px] md:min-h-full">
+        <div class="relative min-h-[260px] md:min-h-full border-t md:border-t-0 md:border-l border-white/10">
           <img id="area-img" src="especialista-derecho.jpg" alt="Especialista en derecho — JP Abogados" class="absolute inset-0 w-full h-full object-cover">
-          <div class="absolute inset-0" style="background:linear-gradient(90deg,#111111 0%,rgba(17,17,17,.25) 34%,transparent 62%)"></div>
         </div>
       </div>
     </div>

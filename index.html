@@ -5,35 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JP Abogados · Tu Consejero Legal · Justicia al alcance de todos</title>
 <meta name="description" content="Despacho de abogados real en México, con cédula y contrato a la vista. Un especialista para cada rama del derecho. Atención 24/7. Defensa real, no coyotes.">
-<meta name="theme-color" content="#14130F">
+<meta name="theme-color" content="#111111">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
   theme: {
     extend: {
       colors: {
-        ink: '#14130F',
-        inksoft: '#211F19',
-        ink2: '#4A473F',
-        paper: '#F7F5EF',
+        ink: '#111111',        /* Negro obsidiana */
+        coal: '#181818',       /* superficie elevada */
+        coal2: '#202020',
+        ink2: '#3C3A36',        /* texto oscuro sobre marfil/blanco */
+        paper: '#F4F1EA',       /* Marfil legal */
         paper2: '#FFFFFF',
-        cream: '#EFEADD',
-        gold: '#9F7C34',
-        goldsoft: '#C5A46D',
-        goldbright: '#D9B670',
-        goldtint: '#EFE4CC',
-        steel: '#6E6B62',
-        line: '#E4DCCB',
-        action: '#14130F',
+        gold: '#C5A46D',        /* Oro cepillado */
+        goldink: '#8A6A2C',     /* oro legible sobre claro */
+        steel: '#63666A',       /* Gris acero */
+        steellt: '#9A9CA0',     /* gris claro para meta sobre oscuro */
         actionhover: '#000000',
-        alert: '#9A2B25',
       },
       fontFamily: {
-        display: ['"Libre Baskerville"', 'Georgia', 'serif'],
+        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
         body: ['Inter', 'system-ui', 'sans-serif'],
       },
       maxWidth: { content: '1200px' },
@@ -42,81 +38,78 @@ tailwind.config = {
 }
 </script>
 <style>
-  :root{
-    --z-nav:40; --z-float:50; --z-top:60;
-    --ease: cubic-bezier(.16,1,.3,1);
-  }
+  :root{ --z-nav:40; --z-float:50; --ease: cubic-bezier(.16,1,.3,1); }
   html{scroll-behavior:smooth;}
-  body{background:#14130F;}
-  ::selection{background:#9F7C34;color:#fff;}
+  body{background:#111111;}
+  ::selection{background:#C5A46D;color:#111;}
 
-  /* ---- Tipografía fluida y disciplinada ---- */
-  .font-display{font-family:"Libre Baskerville",Georgia,serif;}
-  .h-hero{font-size:clamp(2.7rem,1.4rem + 5.2vw,5.25rem);line-height:1.04;letter-spacing:-.02em;text-wrap:balance;}
-  .h-sec{font-size:clamp(2rem,1.2rem + 3.2vw,3.4rem);line-height:1.08;letter-spacing:-.018em;text-wrap:balance;}
-  .h-stat{font-size:clamp(1.55rem,1.1rem + 2vw,2.5rem);line-height:1.18;text-wrap:balance;}
+  /* ---- Tipografía ---- */
+  .font-display{font-family:"Cormorant Garamond",Georgia,serif;}
+  .h-hero{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;text-transform:uppercase;
+    font-size:clamp(2.35rem,1.1rem + 5vw,4.9rem);line-height:1.05;letter-spacing:.015em;text-wrap:balance;}
+  .h-sec{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;
+    font-size:clamp(2.1rem,1.3rem + 3.2vw,3.5rem);line-height:1.08;letter-spacing:.005em;text-wrap:balance;}
+  .h-stat{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;
+    font-size:clamp(1.8rem,1.2rem + 2.4vw,2.9rem);line-height:1.16;text-wrap:balance;}
   .lead{max-width:60ch;}
-  .tracking-luxe{letter-spacing:.22em;}
-  .serif-num{font-family:"Libre Baskerville",Georgia,serif;font-feature-settings:"lnum" 1;}
+  .tracking-luxe{letter-spacing:.26em;}
+  .serif-num{font-family:"Cormorant Garamond",Georgia,serif;font-feature-settings:"lnum" 1;}
 
-  /* ---- Materiales del fondo oscuro (latón gastado / papel) ---- */
+  /* ---- Materiales (obsidiana + oro) ---- */
   .ink-field{
     background:
-      radial-gradient(70% 90% at 84% 8%, rgba(217,182,112,.16), transparent 60%),
-      radial-gradient(60% 70% at 6% 100%, rgba(159,124,52,.12), transparent 62%),
-      linear-gradient(180deg,#16150F 0%, #14130F 60%, #100F0B 100%);
+      radial-gradient(70% 90% at 84% 6%, rgba(197,164,109,.16), transparent 60%),
+      radial-gradient(60% 70% at 4% 100%, rgba(197,164,109,.09), transparent 62%),
+      linear-gradient(180deg,#161616 0%, #111111 58%, #0C0C0C 100%);
   }
-  .grain{position:absolute;inset:0;pointer-events:none;opacity:.5;mix-blend-mode:soft-light;
+  .coal-field{background:linear-gradient(180deg,#161616,#141414);}
+  .grain{position:absolute;inset:0;pointer-events:none;opacity:.4;mix-blend-mode:soft-light;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");}
-  .hairline{height:1px;background:linear-gradient(90deg,transparent,rgba(217,182,112,.55),transparent);}
+  .hairline{height:1px;background:linear-gradient(90deg,transparent,rgba(197,164,109,.55),transparent);}
+  .gold-underline{color:#C5A46D;}
 
-  /* ---- Regla de oro bajo acentos ---- */
-  .gold-underline{position:relative;display:inline;color:#9F7C34;}
-  .ink-field .gold-underline{color:#D9B670;}
-
-  /* ---- Reveal (mejora un default ya visible: solo se oculta con JS) ---- */
+  /* ---- Reveal (mejora un default ya visible) ---- */
   .js .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease),transform .8s var(--ease);}
   .reveal.in{opacity:1;transform:none;}
 
-  /* ---- Orquestación de carga del hero ---- */
+  /* ---- Carga del hero ---- */
   @keyframes riseIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
   @keyframes drawLine{from{transform:scaleX(0)}to{transform:scaleX(1)}}
   .js .hero-anim{opacity:0;animation:riseIn .9s var(--ease) forwards;}
   .js .hero-anim.d1{animation-delay:.05s} .js .hero-anim.d2{animation-delay:.16s}
   .js .hero-anim.d3{animation-delay:.27s} .js .hero-anim.d4{animation-delay:.38s}
-  .js .hero-anim.d5{animation-delay:.5s} .js .hero-anim.d6{animation-delay:.62s}
+  .js .hero-anim.d5{animation-delay:.5s}
   .hero-rule{transform-origin:left;}
   .js .hero-rule{animation:drawLine 1s var(--ease) .7s both;}
 
-  /* ---- Nav consciente del scroll ---- */
+  /* ---- Nav ---- */
   #nav{transition:background-color .4s var(--ease),box-shadow .4s var(--ease),border-color .4s var(--ease);}
-  #nav .nav-link,#nav .nav-brand{transition:color .3s var(--ease);}
+  #nav .nav-link{transition:color .3s var(--ease);}
   #nav:not(.scrolled){background:transparent;border-color:transparent;}
-  #nav:not(.scrolled) .nav-brand{color:#F7F5EF;}
-  #nav:not(.scrolled) .nav-link{color:rgba(247,245,239,.78);}
-  #nav:not(.scrolled) .nav-link:hover{color:#D9B670;}
-  #nav:not(.scrolled) .nav-cta{background:#F7F5EF;color:#14130F;}
-  #nav:not(.scrolled) .nav-cta:hover{background:#fff;}
-  #nav.scrolled{background:rgba(247,245,239,.9);backdrop-filter:blur(10px);border-color:#E4DCCB;box-shadow:0 10px 30px -24px rgba(20,19,15,.5);}
+  #nav.scrolled{background:rgba(17,17,17,.82);backdrop-filter:blur(12px);border-color:rgba(197,164,109,.18);box-shadow:0 12px 34px -24px rgba(0,0,0,.8);}
+  #nav .nav-link{color:rgba(244,241,234,.72);}
+  #nav .nav-link:hover{color:#C5A46D;}
 
-  /* ---- Tabs de áreas ---- */
+  /* ---- Tabs ---- */
   .tab{transition:background-color .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease);}
-  .tab-active{background:#14130F;color:#F7F5EF;border-color:#14130F;}
+  .tab-active{background:#C5A46D;color:#111111;border-color:#C5A46D;}
   .area-panel{transition:opacity .35s var(--ease);}
 
-  /* ---- Tira de confianza (marquee suave, pausa en hover/foco) ---- */
+  /* ---- Tira de confianza (marquee) ---- */
   .trust-track{display:flex;gap:0;width:max-content;animation:trustScroll 38s linear infinite;}
   @keyframes trustScroll{to{transform:translateX(-50%)}}
   .trust-strip:hover .trust-track,.trust-strip:focus-within .trust-track{animation-play-state:paused;}
   .trust-mask{-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
 
-  /* ---- Formulario: evita que los <select> con opciones largas desborden ---- */
-  #leadForm input,#leadForm select,#leadForm textarea{width:100%;min-width:0;max-width:100%;}
+  /* ---- Formulario ---- */
+  #leadForm input:not([type="checkbox"]):not([type="radio"]),#leadForm select,#leadForm textarea{width:100%;min-width:0;max-width:100%;}
+  #leadForm label.flex>span{min-width:0;}
   #contacto .form-grid>*{min-width:0;}
   #leadForm input:focus,#leadForm select:focus,#leadForm textarea:focus{outline:none;}
 
-  /* ---- Detalles finos ---- */
-  .float-card{box-shadow:0 26px 60px -30px rgba(0,0,0,.65);}
+  /* ---- Detalles ---- */
+  .float-card{box-shadow:0 30px 70px -34px rgba(0,0,0,.85);}
+  .ring-gold{box-shadow:0 0 0 1px rgba(197,164,109,.22);}
   .lift{transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s var(--ease);}
   .lift:hover{transform:translateY(-3px);}
   .link-cta{transition:gap .3s var(--ease),color .3s var(--ease);}
@@ -131,76 +124,73 @@ tailwind.config = {
   }
 </style>
 </head>
-<body class="font-body text-ink2 antialiased bg-paper">
+<body class="font-body text-paper antialiased bg-ink">
 
 <!-- ===================== NAV ===================== -->
 <header id="nav" class="fixed top-0 inset-x-0 z-40 border-b">
   <div class="max-w-content mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
-    <a href="#top" class="nav-brand flex items-center gap-2.5 text-ink">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 L16 8 H8 Z" fill="currentColor"/><path d="M12 9 L12 19 M8 13 L12 9 L16 13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span class="font-display font-bold text-xl tracking-wide">JP Abogados</span>
+    <a href="#top" class="flex items-center gap-2.5 text-paper">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 L16 8 H8 Z" fill="#C5A46D"/><path d="M12 9 L12 19 M8 13 L12 9 L16 13" stroke="#C5A46D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="font-display font-bold text-2xl tracking-wide leading-none">JP Abogados</span>
     </a>
     <nav class="hidden md:flex items-center gap-8 text-sm">
-      <a href="#areas" class="nav-link text-ink2">Áreas</a>
-      <a href="#porque" class="nav-link text-ink2">Por qué JP</a>
-      <a href="#contacto" class="nav-link text-ink2">Contacto</a>
+      <a href="#areas" class="nav-link">Áreas</a>
+      <a href="#porque" class="nav-link">Por qué JP</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
     </nav>
     <div class="flex items-center gap-3">
-      <a href="https://wa.me/520000000000" class="nav-link hidden sm:inline text-sm text-ink2">WhatsApp 24/7</a>
-      <a href="#contacto" class="nav-cta text-sm font-semibold bg-ink text-paper px-4 py-2 rounded-full hover:bg-actionhover transition-colors">Cuéntanos tu caso</a>
+      <a href="https://wa.me/520000000000" class="nav-link hidden sm:inline text-sm">WhatsApp 24/7</a>
+      <a href="#contacto" class="text-sm font-semibold bg-gold text-ink px-4 py-2 rounded-full hover:bg-paper transition-colors">Cuéntanos tu caso</a>
     </div>
   </div>
 </header>
 
 <main id="top">
 
-<!-- ===================== HERO (drenched ink) ===================== -->
+<!-- ===================== HERO ===================== -->
 <section class="ink-field relative overflow-hidden text-paper">
   <div class="grain"></div>
   <div class="relative max-w-content mx-auto px-5 sm:px-8 pt-28 pb-20 lg:pt-36 lg:pb-28">
     <div class="grid lg:grid-cols-[1.05fr_.95fr] gap-12 lg:gap-16 items-center">
 
       <div>
-        <p class="hero-anim d1 inline-flex items-center gap-2.5 text-[12px] tracking-luxe uppercase text-goldbright/90 mb-7">
-          <span class="inline-block w-7 h-px bg-goldbright/70"></span>Despacho jurídico · México
+        <p class="hero-anim d1 inline-flex items-center gap-2.5 text-[11px] tracking-luxe uppercase text-gold mb-7">
+          <span class="inline-block w-7 h-px bg-gold/70"></span>Despacho jurídico · México
         </p>
-        <h1 class="hero-anim d2 h-hero font-display font-bold text-paper">
-          Justicia inmediata,<br>
-          <span class="gold-underline">cuando más la necesitas.</span>
-          <span class="block hero-rule h-[3px] w-28 mt-5 bg-goldbright rounded-full"></span>
+        <h1 class="hero-anim d2 h-hero text-paper">
+          Justicia <span class="gold-underline">inmediata</span>, cuando más la necesitas.
+          <span class="block hero-rule h-[3px] w-28 mt-6 bg-gold rounded-full"></span>
         </h1>
         <p class="hero-anim d3 lead mt-7 text-[1.05rem] sm:text-lg leading-relaxed text-paper/72">
           Despachos hay muchos. Coyotes que estafan, también. Nosotros somos el despacho <span class="text-paper font-medium">real</span>: con cédula y contrato a la vista, y un especialista para cada rama del derecho. Atención 24/7.
         </p>
         <div class="hero-anim d4 mt-9 flex flex-col sm:flex-row gap-3">
-          <a href="#contacto" class="text-center bg-goldbright text-ink font-semibold px-7 py-3.5 rounded-full hover:bg-goldsoft transition-colors">Cuéntanos tu caso</a>
-          <a href="https://wa.me/520000000000" class="text-center border border-paper/25 text-paper font-semibold px-7 py-3.5 rounded-full hover:border-goldbright hover:text-goldbright transition-colors">WhatsApp 24/7</a>
+          <a href="#contacto" class="text-center bg-gold text-ink font-semibold px-7 py-3.5 rounded-full hover:bg-paper transition-colors">Cuéntanos tu caso</a>
+          <a href="https://wa.me/520000000000" class="text-center border border-paper/25 text-paper font-semibold px-7 py-3.5 rounded-full hover:border-gold hover:text-gold transition-colors">WhatsApp 24/7</a>
         </div>
         <div class="hero-anim d5 mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm text-paper/65">
-          <span class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Cédula verificable</span>
-          <span class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Contrato por escrito</span>
-          <span class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Respuesta el mismo día</span>
+          <span class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Cédula verificable</span>
+          <span class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Contrato por escrito</span>
+          <span class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Respuesta el mismo día</span>
         </div>
       </div>
 
-      <!-- Visual real (sin rostros inventados): la balanza + tarjeta de estado -->
       <div class="hero-anim d4 relative">
-        <figure class="relative rounded-3xl overflow-hidden float-card border border-paper/10">
+        <figure class="relative rounded-3xl overflow-hidden float-card ring-gold border border-paper/10">
           <img src="especialista-derecho.jpg" alt="Balanza de la justicia y código legal sobre el escritorio de JP Abogados" class="w-full h-[360px] sm:h-[440px] object-cover">
-          <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(20,19,15,0) 38%,rgba(20,19,15,.86) 100%)"></div>
+          <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(17,17,17,0) 38%,rgba(17,17,17,.9) 100%)"></div>
           <figcaption class="absolute left-5 bottom-5 right-5">
-            <p class="font-display text-lg text-paper">Tu Consejero Legal®</p>
+            <p class="font-display text-2xl text-paper leading-tight">Tu Consejero Legal®</p>
             <p class="text-sm text-paper/70 mt-0.5">Defensa real, no coyotes.</p>
           </figcaption>
         </figure>
-        <!-- chip de estado (sin persona, solo proceso) -->
-        <div class="absolute -left-3 sm:-left-6 top-8 w-56 rounded-2xl bg-paper text-ink p-4 float-card">
+        <div class="absolute -left-3 sm:-left-6 top-8 w-56 rounded-2xl bg-paper2 text-ink p-4 float-card">
           <div class="flex items-center justify-between">
             <p class="text-[11px] uppercase tracking-wide text-steel">Caso asignado</p>
-            <p class="font-display text-2xl text-gold leading-none">6:42</p>
+            <p class="font-display text-3xl text-goldink leading-none">6:42</p>
           </div>
-          <div class="my-2.5 h-px bg-line"></div>
-          <p class="text-[13px] leading-snug text-ink2">Especialista en Laboral tomó tu caso. <span class="text-ink font-medium">Contrato enviado por escrito.</span></p>
+          <div class="my-2.5 h-px bg-ink/10"></div>
+          <p class="text-[13px] leading-snug text-ink2">Especialista en Laboral tomó tu caso. <span class="text-ink font-semibold">Contrato enviado por escrito.</span></p>
         </div>
       </div>
 
@@ -209,122 +199,121 @@ tailwind.config = {
   <div class="hairline max-w-content mx-auto"></div>
 </section>
 
-<!-- ===================== TIRA DE CONFIANZA (marquee) ===================== -->
-<section class="trust-strip bg-ink text-paper/80 border-b border-paper/10 overflow-hidden" aria-label="Lo que distingue a un despacho real de un coyote">
+<!-- ===================== TIRA DE CONFIANZA ===================== -->
+<section class="trust-strip coal-field text-paper/85 border-b border-white/5 overflow-hidden" aria-label="Lo que distingue a un despacho real de un coyote">
   <div class="trust-mask py-4">
     <div class="trust-track">
-      <!-- set duplicado para loop continuo -->
-      <ul class="flex items-center gap-10 px-5 text-sm whitespace-nowrap" aria-hidden="false">
-        <li class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Cédula verificable</li>
-        <li class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Contrato por escrito</li>
-        <li class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Especialista por rama</li>
-        <li class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Atención 24/7</li>
-        <li class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Sin pagos por fuera</li>
-        <li class="inline-flex items-center gap-2 text-goldbright/80 font-display italic">Justicia al alcance de todos</li>
+      <ul class="flex items-center gap-10 px-5 text-sm whitespace-nowrap">
+        <li class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Cédula verificable</li>
+        <li class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Contrato por escrito</li>
+        <li class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Especialista por rama</li>
+        <li class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Atención 24/7</li>
+        <li class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Sin pagos por fuera</li>
+        <li class="inline-flex items-center gap-2 text-gold font-display italic text-base">Justicia al alcance de todos</li>
       </ul>
       <ul class="flex items-center gap-10 px-5 text-sm whitespace-nowrap" aria-hidden="true">
-        <li class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Cédula verificable</li>
-        <li class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Contrato por escrito</li>
-        <li class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Especialista por rama</li>
-        <li class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Atención 24/7</li>
-        <li class="inline-flex items-center gap-2"><span class="text-goldbright">✓</span> Sin pagos por fuera</li>
-        <li class="inline-flex items-center gap-2 text-goldbright/80 font-display italic">Justicia al alcance de todos</li>
+        <li class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Cédula verificable</li>
+        <li class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Contrato por escrito</li>
+        <li class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Especialista por rama</li>
+        <li class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Atención 24/7</li>
+        <li class="inline-flex items-center gap-2"><span class="text-gold">✓</span> Sin pagos por fuera</li>
+        <li class="inline-flex items-center gap-2 text-gold font-display italic text-base">Justicia al alcance de todos</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- ===================== STAT (pull-quote editorial) ===================== -->
-<section class="py-20 sm:py-28">
+<!-- ===================== STAT ===================== -->
+<section class="py-20 sm:py-28 bg-ink">
   <div class="max-w-content mx-auto px-5 sm:px-8">
     <div class="grid md:grid-cols-[1.5fr_1fr] gap-x-14 gap-y-8 items-start">
-      <p class="reveal h-stat font-display font-bold text-ink">
+      <p class="reveal h-stat text-paper">
         En México casi la mitad de las personas tuvo un problema legal en los últimos dos años, y solo <span class="gold-underline">1 de cada 4</span> buscó un abogado.
       </p>
       <div class="reveal md:pt-2">
-        <div class="hairline-dark h-px w-16 bg-gold/50 mb-5"></div>
-        <p class="text-ink2 leading-relaxed">
-          El resto lo dejó pasar, lo "resolvió solo" o cayó con un falso gestor. Hay coyotes que se quedan <span class="text-ink font-semibold">hasta con el 40% de tu dinero</span> por una gestión que nunca cumplen.
+        <div class="h-px w-16 bg-gold/50 mb-5"></div>
+        <p class="text-paper/72 leading-relaxed">
+          El resto lo dejó pasar, lo "resolvió solo" o cayó con un falso gestor. Hay coyotes que se quedan <span class="text-paper font-semibold">hasta con el 40% de tu dinero</span> por una gestión que nunca cumplen.
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== ÁREAS (tabs) ===================== -->
-<section id="areas" class="py-16 sm:py-24 bg-paper2 border-y border-line">
+<!-- ===================== ÁREAS ===================== -->
+<section id="areas" class="py-16 sm:py-24 coal-field border-y border-white/5">
   <div class="max-w-content mx-auto px-5 sm:px-8">
     <div class="max-w-2xl">
-      <h2 class="reveal h-sec font-display font-bold text-ink">Elige a tu <span class="gold-underline">especialista</span> para cada rama del derecho</h2>
-      <p class="reveal mt-5 text-lg text-ink2 lead">No un todólogo que improvisa. El abogado exacto que domina tu tipo de caso.</p>
+      <h2 class="reveal h-sec text-paper">Elige a tu <span class="gold-underline">especialista</span> para cada rama del derecho</h2>
+      <p class="reveal mt-5 text-lg text-paper/72 lead">No un todólogo que improvisa. El abogado exacto que domina tu tipo de caso.</p>
     </div>
 
     <div class="reveal mt-9 flex flex-wrap gap-2" id="tabs" role="tablist">
-      <button class="tab tab-active text-sm font-medium px-4 py-2 rounded-full border border-ink/15" data-tab="familiar">Familiar</button>
-      <button class="tab text-sm font-medium px-4 py-2 rounded-full border border-ink/15 text-ink2" data-tab="penal">Penal</button>
-      <button class="tab text-sm font-medium px-4 py-2 rounded-full border border-ink/15 text-ink2" data-tab="laboral">Laboral</button>
-      <button class="tab text-sm font-medium px-4 py-2 rounded-full border border-ink/15 text-ink2" data-tab="civil">Civil y Mercantil</button>
-      <button class="tab text-sm font-medium px-4 py-2 rounded-full border border-ink/15 text-ink2" data-tab="amparo">Administrativo y Amparo</button>
+      <button class="tab tab-active text-sm font-medium px-4 py-2 rounded-full border border-paper/20" data-tab="familiar">Familiar</button>
+      <button class="tab text-sm font-medium px-4 py-2 rounded-full border border-paper/20 text-paper/75" data-tab="penal">Penal</button>
+      <button class="tab text-sm font-medium px-4 py-2 rounded-full border border-paper/20 text-paper/75" data-tab="laboral">Laboral</button>
+      <button class="tab text-sm font-medium px-4 py-2 rounded-full border border-paper/20 text-paper/75" data-tab="civil">Civil y Mercantil</button>
+      <button class="tab text-sm font-medium px-4 py-2 rounded-full border border-paper/20 text-paper/75" data-tab="amparo">Administrativo y Amparo</button>
     </div>
 
-    <div class="reveal mt-7 rounded-3xl border border-line overflow-hidden bg-paper">
+    <div class="reveal mt-7 rounded-3xl border border-white/10 overflow-hidden bg-ink">
       <div class="grid md:grid-cols-[1.25fr_1fr] items-stretch">
         <div class="area-panel p-8 sm:p-11">
-          <h3 id="area-title" class="font-display font-bold text-2xl sm:text-[1.9rem] leading-tight text-ink mb-4">Derecho Familiar</h3>
-          <p id="area-desc" class="text-ink2 leading-relaxed lead">Divorcio, pensión alimenticia, custodia y violencia familiar. Cuando lo que está en juego es tu familia, te acompaña un especialista que ya resolvió casos como el tuyo, con reglas claras desde el primer día.</p>
+          <h3 id="area-title" class="font-display font-bold text-3xl sm:text-[2.1rem] leading-tight text-paper mb-4">Derecho Familiar</h3>
+          <p id="area-desc" class="text-paper/72 leading-relaxed lead">Divorcio, pensión alimenticia, custodia y violencia familiar. Cuando lo que está en juego es tu familia, te acompaña un especialista que ya resolvió casos como el tuyo, con reglas claras desde el primer día.</p>
           <div id="area-tags" class="mt-6 flex flex-wrap gap-2">
-            <span class="text-xs bg-paper2 border border-line px-3 py-1 rounded-full">Divorcio</span>
-            <span class="text-xs bg-paper2 border border-line px-3 py-1 rounded-full">Pensión</span>
-            <span class="text-xs bg-paper2 border border-line px-3 py-1 rounded-full">Custodia</span>
+            <span class="text-xs bg-coal2 border border-white/10 text-paper/80 px-3 py-1 rounded-full">Divorcio</span>
+            <span class="text-xs bg-coal2 border border-white/10 text-paper/80 px-3 py-1 rounded-full">Pensión</span>
+            <span class="text-xs bg-coal2 border border-white/10 text-paper/80 px-3 py-1 rounded-full">Custodia</span>
           </div>
-          <a href="#contacto" class="link-cta inline-flex items-center gap-2 mt-8 bg-ink text-paper text-sm font-semibold px-6 py-3 rounded-full hover:bg-actionhover transition-colors">Hablar con un especialista <span aria-hidden="true">→</span></a>
+          <a href="#contacto" class="link-cta inline-flex items-center gap-2 mt-8 bg-gold text-ink text-sm font-semibold px-6 py-3 rounded-full hover:bg-paper transition-colors">Hablar con un especialista <span aria-hidden="true">→</span></a>
         </div>
         <div class="relative min-h-[260px] md:min-h-full">
           <img id="area-img" src="especialista-derecho.jpg" alt="Especialista en derecho — JP Abogados" class="absolute inset-0 w-full h-full object-cover">
-          <div class="absolute inset-0" style="background:linear-gradient(90deg,#F7F5EF 0%,rgba(247,245,239,.15) 32%,transparent 60%)"></div>
+          <div class="absolute inset-0" style="background:linear-gradient(90deg,#111111 0%,rgba(17,17,17,.25) 34%,transparent 62%)"></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== POR QUÉ (editorial, no card-grid) ===================== -->
-<section id="porque" class="py-16 sm:py-28">
+<!-- ===================== POR QUÉ ===================== -->
+<section id="porque" class="py-16 sm:py-28 bg-ink">
   <div class="max-w-content mx-auto px-5 sm:px-8">
     <div class="grid lg:grid-cols-[1fr_1.05fr] gap-12 lg:gap-20 items-start">
       <div class="lg:sticky lg:top-24">
-        <h2 class="reveal h-sec font-display font-bold text-ink">Por qué elegir <span class="gold-underline">JP Abogados</span></h2>
-        <p class="reveal mt-5 text-ink2 leading-relaxed lead">La diferencia entre un despacho real y un coyote no es el discurso. Son los papeles, el especialista correcto y estar cuando la cosa arde.</p>
+        <h2 class="reveal h-sec text-paper">Por qué elegir <span class="gold-underline">JP Abogados</span></h2>
+        <p class="reveal mt-5 text-paper/72 leading-relaxed lead">La diferencia entre un despacho real y un coyote no es el discurso. Son los papeles, el especialista correcto y estar cuando la cosa arde.</p>
         <a href="#contacto" class="reveal link-cta inline-flex items-center gap-2 mt-8 text-gold font-semibold">Cuéntanos tu caso <span aria-hidden="true">→</span></a>
       </div>
 
-      <dl class="divide-y divide-line border-y border-line">
+      <dl class="divide-y divide-white/10 border-y border-white/10">
         <div class="reveal grid grid-cols-[auto_1fr] gap-x-5 sm:gap-x-7 py-7">
-          <span class="mt-2.5 w-2.5 h-2.5 rotate-45 bg-gold/75 shrink-0" aria-hidden="true"></span>
+          <span class="mt-3 w-2.5 h-2.5 rotate-45 bg-gold shrink-0" aria-hidden="true"></span>
           <div>
-            <dt class="font-display text-xl text-ink mb-1.5">Un abogado de verdad, no un coyote</dt>
-            <dd class="text-ink2 leading-relaxed">Cédula profesional verificable y contrato por escrito desde el inicio. Damos la cara y respondemos por nuestro trabajo.</dd>
+            <dt class="font-display font-bold text-2xl text-paper mb-1.5">Un abogado de verdad, no un coyote</dt>
+            <dd class="text-paper/70 leading-relaxed">Cédula profesional verificable y contrato por escrito desde el inicio. Damos la cara y respondemos por nuestro trabajo.</dd>
           </div>
         </div>
         <div class="reveal grid grid-cols-[auto_1fr] gap-x-5 sm:gap-x-7 py-7">
-          <span class="mt-2.5 w-2.5 h-2.5 rotate-45 bg-gold/75 shrink-0" aria-hidden="true"></span>
+          <span class="mt-3 w-2.5 h-2.5 rotate-45 bg-gold shrink-0" aria-hidden="true"></span>
           <div>
-            <dt class="font-display text-xl text-ink mb-1.5">El especialista exacto</dt>
-            <dd class="text-ink2 leading-relaxed">Un experto por cada rama. Tu caso lo lleva quien de verdad lo domina, no quien improvisa.</dd>
+            <dt class="font-display font-bold text-2xl text-paper mb-1.5">El especialista exacto</dt>
+            <dd class="text-paper/70 leading-relaxed">Un experto por cada rama. Tu caso lo lleva quien de verdad lo domina, no quien improvisa.</dd>
           </div>
         </div>
         <div class="reveal grid grid-cols-[auto_1fr] gap-x-5 sm:gap-x-7 py-7">
-          <span class="mt-2.5 w-2.5 h-2.5 rotate-45 bg-gold/75 shrink-0" aria-hidden="true"></span>
+          <span class="mt-3 w-2.5 h-2.5 rotate-45 bg-gold shrink-0" aria-hidden="true"></span>
           <div>
-            <dt class="font-display text-xl text-ink mb-1.5">Atención 24/7</dt>
-            <dd class="text-ink2 leading-relaxed">Los problemas legales no respetan horario. Cuando todo se siente fuera de control, ya estamos de tu lado.</dd>
+            <dt class="font-display font-bold text-2xl text-paper mb-1.5">Atención 24/7</dt>
+            <dd class="text-paper/70 leading-relaxed">Los problemas legales no respetan horario. Cuando todo se siente fuera de control, ya estamos de tu lado.</dd>
           </div>
         </div>
         <div class="reveal grid grid-cols-[auto_1fr] gap-x-5 sm:gap-x-7 py-7">
-          <span class="mt-2.5 w-2.5 h-2.5 rotate-45 bg-gold/75 shrink-0" aria-hidden="true"></span>
+          <span class="mt-3 w-2.5 h-2.5 rotate-45 bg-gold shrink-0" aria-hidden="true"></span>
           <div>
-            <dt class="font-display text-xl text-ink mb-1.5">Reglas claras, sin sorpresas</dt>
-            <dd class="text-ink2 leading-relaxed">Alcance, tiempos y honorarios por escrito antes de avanzar. Sin letras chiquitas, sin pagos por fuera.</dd>
+            <dt class="font-display font-bold text-2xl text-paper mb-1.5">Reglas claras, sin sorpresas</dt>
+            <dd class="text-paper/70 leading-relaxed">Alcance, tiempos y honorarios por escrito antes de avanzar. Sin letras chiquitas, sin pagos por fuera.</dd>
           </div>
         </div>
       </dl>
@@ -332,18 +321,18 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- ===================== TESTIMONIO (sin rostro inventado) ===================== -->
-<section class="pb-16 sm:pb-28">
+<!-- ===================== TESTIMONIO ===================== -->
+<section class="pb-16 sm:pb-28 bg-ink">
   <div class="max-w-content mx-auto px-5 sm:px-8">
-    <figure class="reveal relative rounded-3xl bg-inksoft text-paper overflow-hidden p-8 sm:p-14">
+    <figure class="reveal relative rounded-3xl coal-field ring-gold border border-white/10 text-paper overflow-hidden p-8 sm:p-14">
       <div class="grain"></div>
       <div class="relative">
-        <span class="font-display text-6xl sm:text-7xl text-goldbright/40 leading-none select-none" aria-hidden="true">“</span>
-        <blockquote class="-mt-6 sm:-mt-8">
-          <p class="font-display text-xl sm:text-[1.7rem] leading-snug text-paper max-w-3xl">Llegué con miedo de que me estafaran como ya me había pasado. Aquí me dieron contrato, me explicaron todo y supe siempre con quién hablaba. Eso no tiene precio.</p>
+        <span class="font-display text-7xl text-gold/45 leading-none select-none" aria-hidden="true">“</span>
+        <blockquote class="-mt-7 sm:-mt-9">
+          <p class="font-display text-2xl sm:text-[2rem] leading-snug text-paper max-w-3xl">Llegué con miedo de que me estafaran como ya me había pasado. Aquí me dieron contrato, me explicaron todo y supe siempre con quién hablaba. Eso no tiene precio.</p>
         </blockquote>
         <figcaption class="mt-7 flex items-center gap-3 text-sm text-paper/55">
-          <span class="inline-block w-8 h-px bg-goldbright/60"></span>
+          <span class="inline-block w-8 h-px bg-gold/60"></span>
           Espacio reservado para testimonio real de cliente, con su consentimiento.
         </figcaption>
       </div>
@@ -351,41 +340,41 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- ===================== CTA + FORMULARIO (drenched ink) ===================== -->
-<section id="contacto" class="ink-field relative overflow-hidden text-paper py-16 sm:py-24">
+<!-- ===================== CTA + FORMULARIO ===================== -->
+<section id="contacto" class="ink-field relative overflow-hidden text-paper py-16 sm:py-24 border-t border-white/5">
   <div class="grain"></div>
   <div class="relative max-w-content mx-auto px-5 sm:px-8">
     <div class="form-grid grid lg:grid-cols-[1fr_1.05fr] gap-12 lg:gap-16 items-start">
 
       <div class="reveal lg:sticky lg:top-24">
-        <h2 class="h-sec font-display font-bold text-paper">Tu caso no mejora <span class="gold-underline">esperando.</span></h2>
+        <h2 class="h-sec text-paper">Tu caso no mejora <span class="gold-underline">esperando.</span></h2>
         <p class="mt-6 text-paper/72 leading-relaxed lead">Cuéntanos qué pasó. Un especialista de tu rama revisa tu caso y te contacta el mismo día con los siguientes pasos y los honorarios, por escrito.</p>
         <div class="mt-9 space-y-4">
-          <div class="flex items-center gap-3"><span class="grid place-items-center w-9 h-9 rounded-full border border-goldbright/40 text-goldbright shrink-0">✓</span><span class="text-paper/85">Respuesta el mismo día</span></div>
-          <div class="flex items-center gap-3"><span class="grid place-items-center w-9 h-9 rounded-full border border-goldbright/40 text-goldbright shrink-0">✓</span><span class="text-paper/85">Atención 24/7 por WhatsApp</span></div>
-          <div class="flex items-center gap-3"><span class="grid place-items-center w-9 h-9 rounded-full border border-goldbright/40 text-goldbright shrink-0">✓</span><span class="text-paper/85">Información confidencial</span></div>
+          <div class="flex items-center gap-3"><span class="grid place-items-center w-9 h-9 rounded-full border border-gold/40 text-gold shrink-0">✓</span><span class="text-paper/85">Respuesta el mismo día</span></div>
+          <div class="flex items-center gap-3"><span class="grid place-items-center w-9 h-9 rounded-full border border-gold/40 text-gold shrink-0">✓</span><span class="text-paper/85">Atención 24/7 por WhatsApp</span></div>
+          <div class="flex items-center gap-3"><span class="grid place-items-center w-9 h-9 rounded-full border border-gold/40 text-gold shrink-0">✓</span><span class="text-paper/85">Información confidencial</span></div>
         </div>
         <p class="mt-9 text-sm text-paper/50">¿Es una emergencia ahora mismo?
-          <a href="https://wa.me/520000000000" class="text-goldbright font-medium hover:text-goldsoft underline underline-offset-4 decoration-goldbright/40">Escríbenos por WhatsApp →</a>
+          <a href="https://wa.me/520000000000" class="text-gold font-medium hover:text-paper underline underline-offset-4 decoration-gold/40">Escríbenos por WhatsApp →</a>
         </p>
       </div>
 
       <div class="reveal">
-        <form id="leadForm" class="bg-paper2 text-ink2 rounded-3xl border border-line float-card p-6 sm:p-9" novalidate>
-          <h3 class="font-display font-bold text-2xl text-ink mb-1">Cuéntanos tu caso</h3>
+        <form id="leadForm" class="bg-paper2 text-ink2 rounded-3xl border border-white/10 float-card p-6 sm:p-9" novalidate>
+          <h3 class="font-display font-bold text-3xl text-ink mb-1 leading-tight">Cuéntanos tu caso</h3>
           <p class="text-steel text-sm mb-7">Te contacta un especialista de tu rama.</p>
           <div class="space-y-4">
             <div class="grid gap-1.5">
               <label for="nombre" class="text-sm text-ink font-medium">Nombre completo</label>
-              <input id="nombre" type="text" required autocomplete="name" class="bg-paper border border-line rounded-xl px-4 py-3 text-ink placeholder-steel/70 focus:border-gold focus:ring-2 focus:ring-gold/25 transition">
+              <input id="nombre" type="text" required autocomplete="name" class="bg-paper border border-black/10 rounded-xl px-4 py-3 text-ink placeholder-steel focus:border-gold focus:ring-2 focus:ring-gold/30 transition">
             </div>
             <div class="grid gap-1.5">
               <label for="tel" class="text-sm text-ink font-medium">Teléfono / WhatsApp</label>
-              <input id="tel" type="tel" required autocomplete="tel" placeholder="Para responderte hoy mismo" class="bg-paper border border-line rounded-xl px-4 py-3 text-ink placeholder-steel/70 focus:border-gold focus:ring-2 focus:ring-gold/25 transition">
+              <input id="tel" type="tel" required autocomplete="tel" placeholder="Para responderte hoy mismo" class="bg-paper border border-black/10 rounded-xl px-4 py-3 text-ink placeholder-steel focus:border-gold focus:ring-2 focus:ring-gold/30 transition">
             </div>
             <div class="grid gap-1.5">
               <label for="caso" class="text-sm text-ink font-medium">¿Qué tipo de caso tienes?</label>
-              <select id="caso" required class="bg-paper border border-line rounded-xl px-4 py-3 text-ink focus:border-gold focus:ring-2 focus:ring-gold/25 transition">
+              <select id="caso" required class="bg-paper border border-black/10 rounded-xl px-4 py-3 text-ink focus:border-gold focus:ring-2 focus:ring-gold/30 transition">
                 <option value="" disabled selected>Selecciona una opción</option>
                 <option>Familiar (divorcio, pensión, custodia)</option>
                 <option>Penal (defensa, denuncia, detención)</option>
@@ -397,7 +386,7 @@ tailwind.config = {
             </div>
             <div class="grid gap-1.5">
               <label for="urgencia" class="text-sm text-ink font-medium">¿Qué tan urgente es?</label>
-              <select id="urgencia" required class="bg-paper border border-line rounded-xl px-4 py-3 text-ink focus:border-gold focus:ring-2 focus:ring-gold/25 transition">
+              <select id="urgencia" required class="bg-paper border border-black/10 rounded-xl px-4 py-3 text-ink focus:border-gold focus:ring-2 focus:ring-gold/30 transition">
                 <option value="" disabled selected>Selecciona una opción</option>
                 <option>Es una emergencia (hoy)</option>
                 <option>Esta semana</option>
@@ -406,7 +395,7 @@ tailwind.config = {
             </div>
             <div class="grid gap-1.5">
               <label for="intencion" class="text-sm text-ink font-medium">¿Buscas contratar un abogado para resolver esto?</label>
-              <select id="intencion" required class="bg-paper border border-line rounded-xl px-4 py-3 text-ink focus:border-gold focus:ring-2 focus:ring-gold/25 transition">
+              <select id="intencion" required class="bg-paper border border-black/10 rounded-xl px-4 py-3 text-ink focus:border-gold focus:ring-2 focus:ring-gold/30 transition">
                 <option value="" disabled selected>Selecciona una opción</option>
                 <option>Sí, quiero resolverlo y estoy listo para contratar</option>
                 <option>Sí, quiero saber costos y cómo procederían</option>
@@ -415,17 +404,17 @@ tailwind.config = {
             </div>
             <div class="grid gap-1.5">
               <label for="detalle" class="text-sm text-ink font-medium">Cuéntanos brevemente qué pasó <span class="text-steel font-normal">(opcional)</span></label>
-              <textarea id="detalle" rows="3" placeholder="Toda la información es confidencial." class="bg-paper border border-line rounded-xl px-4 py-3 text-ink placeholder-steel/70 focus:border-gold focus:ring-2 focus:ring-gold/25 transition resize-none"></textarea>
+              <textarea id="detalle" rows="3" placeholder="Toda la información es confidencial." class="bg-paper border border-black/10 rounded-xl px-4 py-3 text-ink placeholder-steel focus:border-gold focus:ring-2 focus:ring-gold/30 transition resize-none"></textarea>
             </div>
             <label class="flex items-start gap-3 text-sm text-ink2">
               <input type="checkbox" required class="mt-1 accent-gold w-4 h-4 shrink-0">
-              <span>Acepto el <a href="#" class="text-gold underline underline-offset-2">aviso de privacidad</a> y que JP Abogados me contacte sobre mi caso.</span>
+              <span>Acepto el <a href="#" class="text-goldink font-medium underline underline-offset-2">aviso de privacidad</a> y que JP Abogados me contacte sobre mi caso.</span>
             </label>
           </div>
           <button type="submit" class="mt-7 w-full bg-ink text-paper font-semibold py-3.5 rounded-full hover:bg-actionhover transition-colors">Enviar mi caso</button>
           <p class="mt-3 text-center text-xs text-steel">Respuesta el mismo día · Sin compromiso · Confidencial</p>
-          <div id="formOk" class="hidden mt-5 border border-gold/50 bg-goldtint rounded-xl p-4 text-center">
-            <p class="font-display text-xl text-gold">Caso recibido</p>
+          <div id="formOk" class="hidden mt-5 border border-gold/50 bg-paper rounded-xl p-4 text-center">
+            <p class="font-display font-bold text-2xl text-goldink leading-tight">Caso recibido</p>
             <p class="text-ink2 text-sm mt-1">Un especialista te contactará hoy. Si es urgente, escríbenos por WhatsApp.</p>
           </div>
         </form>
@@ -438,41 +427,40 @@ tailwind.config = {
 </main>
 
 <!-- ===================== FOOTER ===================== -->
-<footer class="bg-ink text-paper">
-  <div class="hairline max-w-content mx-auto"></div>
+<footer class="bg-ink text-paper border-t border-white/5">
   <div class="max-w-content mx-auto px-5 sm:px-8 py-14">
     <div class="grid md:grid-cols-[1.5fr_1fr_1fr] gap-10">
       <div>
         <div class="flex items-center gap-2.5">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 L16 8 H8 Z" fill="#D9B670"/><path d="M12 9 L12 19 M8 13 L12 9 L16 13" stroke="#D9B670" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span class="font-display font-bold text-xl">JP Abogados</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 L16 8 H8 Z" fill="#C5A46D"/><path d="M12 9 L12 19 M8 13 L12 9 L16 13" stroke="#C5A46D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="font-display font-bold text-2xl leading-none">JP Abogados</span>
         </div>
         <p class="mt-4 text-paper/55 text-sm max-w-xs leading-relaxed">Tu Consejero Legal®. Justicia al alcance de todos. Despacho legalmente constituido en México, con cédula verificable. Defensa real, no coyotes.</p>
       </div>
       <div>
-        <p class="text-paper/40 text-xs uppercase tracking-luxe mb-4">Áreas</p>
+        <p class="text-gold/80 text-xs uppercase tracking-luxe mb-4">Áreas</p>
         <ul class="space-y-2.5 text-sm text-paper/70">
-          <li><a href="#areas" class="hover:text-goldbright transition-colors">Familiar</a></li>
-          <li><a href="#areas" class="hover:text-goldbright transition-colors">Penal</a></li>
-          <li><a href="#areas" class="hover:text-goldbright transition-colors">Laboral</a></li>
-          <li><a href="#areas" class="hover:text-goldbright transition-colors">Civil y Mercantil</a></li>
-          <li><a href="#areas" class="hover:text-goldbright transition-colors">Administrativo y Amparo</a></li>
+          <li><a href="#areas" class="hover:text-gold transition-colors">Familiar</a></li>
+          <li><a href="#areas" class="hover:text-gold transition-colors">Penal</a></li>
+          <li><a href="#areas" class="hover:text-gold transition-colors">Laboral</a></li>
+          <li><a href="#areas" class="hover:text-gold transition-colors">Civil y Mercantil</a></li>
+          <li><a href="#areas" class="hover:text-gold transition-colors">Administrativo y Amparo</a></li>
         </ul>
       </div>
       <div>
-        <p class="text-paper/40 text-xs uppercase tracking-luxe mb-4">Contacto</p>
+        <p class="text-gold/80 text-xs uppercase tracking-luxe mb-4">Contacto</p>
         <ul class="space-y-2.5 text-sm text-paper/70">
-          <li><a href="https://wa.me/520000000000" class="hover:text-goldbright transition-colors">WhatsApp 24/7</a></li>
-          <li><a href="#contacto" class="hover:text-goldbright transition-colors">Cuéntanos tu caso</a></li>
-          <li><a href="#" class="hover:text-goldbright transition-colors">Aviso de privacidad</a></li>
+          <li><a href="https://wa.me/520000000000" class="hover:text-gold transition-colors">WhatsApp 24/7</a></li>
+          <li><a href="#contacto" class="hover:text-gold transition-colors">Cuéntanos tu caso</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">Aviso de privacidad</a></li>
         </ul>
       </div>
     </div>
-    <p class="mt-12 pt-6 border-t border-paper/10 text-paper/35 text-xs leading-relaxed">© <span id="yr"></span> JP Abogados · Tu Consejero Legal®. Esta página es informativa y no constituye asesoría jurídica particular hasta la formalización de un contrato de servicios.</p>
+    <p class="mt-12 pt-6 border-t border-white/10 text-paper/40 text-xs leading-relaxed">© <span id="yr"></span> JP Abogados · Tu Consejero Legal®. Esta página es informativa y no constituye asesoría jurídica particular hasta la formalización de un contrato de servicios.</p>
   </div>
 </footer>
 
-<a href="https://wa.me/520000000000" aria-label="WhatsApp 24/7" class="fixed bottom-5 right-5 z-50 grid place-items-center w-14 h-14 rounded-full bg-ink text-paper shadow-lg ring-1 ring-goldbright/25 hover:bg-actionhover hover:ring-goldbright/60 transition">
+<a href="https://wa.me/520000000000" aria-label="WhatsApp 24/7" class="fixed bottom-5 right-5 z-50 grid place-items-center w-14 h-14 rounded-full bg-gold text-ink shadow-lg ring-1 ring-black/20 hover:bg-paper transition">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.8.8.8-2.7-.2-.3A8 8 0 1112 20zm4.6-6c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.5 6.5 0 01-1.9-1.2 7.2 7.2 0 01-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.5.3-.5v-.5c0-.1-.6-1.5-.8-2s-.4-.4-.6-.4h-.5a1 1 0 00-.7.3A2.9 2.9 0 006 8.9c0 1.7 1.2 3.3 1.4 3.6s2.5 3.8 6 5c.8.3 1.5.5 2 .7.8.2 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.5-.3z"/></svg>
 </a>
 
@@ -511,13 +499,13 @@ tailwind.config = {
   const panel=document.querySelector('.area-panel');
   document.querySelectorAll('.tab').forEach(btn=>{
     btn.addEventListener('click',()=>{
-      document.querySelectorAll('.tab').forEach(b=>{b.classList.remove('tab-active');b.classList.add('text-ink2');});
-      btn.classList.add('tab-active');btn.classList.remove('text-ink2');
+      document.querySelectorAll('.tab').forEach(b=>{b.classList.remove('tab-active');b.classList.add('text-paper/75');});
+      btn.classList.add('tab-active');btn.classList.remove('text-paper/75');
       const a=areas[btn.dataset.tab];
       if(panel) panel.style.opacity='0';
       setTimeout(function(){
         tt.textContent=a.t;dd.textContent=a.d;
-        gg.innerHTML=a.tags.map(x=>`<span class="text-xs bg-paper2 border border-line px-3 py-1 rounded-full">${x}</span>`).join('');
+        gg.innerHTML=a.tags.map(x=>`<span class="text-xs bg-coal2 border border-white/10 text-paper/80 px-3 py-1 rounded-full">${x}</span>`).join('');
         if(panel) panel.style.opacity='1';
       },160);
       // La imagen es la misma para todas las ramas

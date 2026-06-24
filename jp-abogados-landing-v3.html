@@ -193,7 +193,7 @@ tailwind.config = {
           <a href="#contacto" class="inline-block mt-7 bg-ink text-paper text-sm font-semibold px-6 py-3 rounded-full hover:bg-actionhover transition-colors">Hablar con un especialista</a>
         </div>
         <div class="relative h-64 md:h-full min-h-[280px]">
-          <img id="area-img" src="https://picsum.photos/seed/jp-area-familiar/700/700" alt="Especialista en derecho familiar" class="absolute inset-0 w-full h-full object-cover grayscale">
+          <img id="area-img" src="especialista-derecho.jpg" alt="Especialista en derecho — JP Abogados" class="absolute inset-0 w-full h-full object-cover">
           <div class="absolute inset-0" style="background:linear-gradient(90deg,#EFE4CC 0%,transparent 40%)"></div>
         </div>
       </div>
@@ -417,7 +417,8 @@ tailwind.config = {
       const a=areas[btn.dataset.tab];
       tt.textContent=a.t;dd.textContent=a.d;
       gg.innerHTML=a.tags.map(x=>`<span class="text-xs bg-paper2 border border-line px-3 py-1 rounded-full">${x}</span>`).join('');
-      mm.src=`https://picsum.photos/seed/${a.img}/700/700`;
+      // Misma imagen para todas las ramas
+      mm.src='especialista-derecho.jpg';
     });
   });
 

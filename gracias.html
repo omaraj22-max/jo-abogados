@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caso recibido · JP Abogados</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{ink:'#1A1A18',ink2:'#46443E',paper:'#F5F1E8',paper2:'#FFFFFF',cream:'#EFEADD',gold:'#A8843E',goldsoft:'#C5A46D',goldtint:'#EFE4CC',steel:'#6E6B62',line:'#E4DCCB'},fontFamily:{display:['"Libre Baskerville"','Georgia','serif'],body:['Inter','sans-serif']},maxWidth:{content:'1180px'}}}}
+</script>
+<style>body{background:#F5F1E8;}.font-display{letter-spacing:-.01em;}.tracking-luxe{letter-spacing:.24em;}</style>
+</head>
+<body class="font-body text-ink antialiased">
+<header class="border-b border-line bg-paper/90">
+  <div class="max-w-content mx-auto px-5 sm:px-8 h-16 flex items-center">
+    <a href="/" class="flex items-center gap-2.5">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2 L16 8 H8 Z" fill="#A8843E"/><path d="M12 9 L12 19 M8 13 L12 9 L16 13" stroke="#A8843E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="font-display font-bold text-xl tracking-wide">JP Abogados</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="max-w-content mx-auto px-5 sm:px-8 py-20 sm:py-28 text-center">
+    <span class="inline-flex items-center gap-2 text-xs tracking-luxe uppercase text-gold border border-gold/40 rounded-full px-4 py-1.5 mb-8">Caso recibido</span>
+    <h1 class="font-display font-bold text-3xl sm:text-5xl leading-[1.1] text-ink max-w-2xl mx-auto">
+      Recibimos tu caso. Un especialista lo revisa y te contacta hoy.
+    </h1>
+    <p class="mt-6 text-ink2 leading-relaxed max-w-xl mx-auto">
+      Un abogado de tu rama está revisando tu situación. Te contactará el mismo día con los siguientes pasos y los honorarios, por escrito y con reglas claras.
+    </p>
+    <div class="mt-10">
+      <a href="https://wa.me/520000000000?text=Hola,%20envié%20mi%20caso%20desde%20su%20sitio%20y%20quiero%20adelantar%20la%20conversación."
+        class="inline-flex items-center gap-3 border border-ink/20 text-ink font-semibold px-7 py-3.5 rounded-full hover:border-gold hover:text-gold transition-colors">
+        ¿Prefieres adelantar? Escríbenos por WhatsApp
+      </a>
+    </div>
+
+    <div class="mt-16 grid sm:grid-cols-3 gap-px bg-line rounded-xl overflow-hidden border border-line text-left max-w-3xl mx-auto">
+      <div class="bg-paper2 p-6"><span class="font-display font-bold text-3xl text-gold/50">01</span><h3 class="font-display font-bold text-lg text-ink mt-2 mb-1">Revisamos tu caso</h3><p class="text-ink2 text-sm">Un especialista de tu rama lo evalúa.</p></div>
+      <div class="bg-paper2 p-6"><span class="font-display font-bold text-3xl text-gold/50">02</span><h3 class="font-display font-bold text-lg text-ink mt-2 mb-1">Te contactamos hoy</h3><p class="text-ink2 text-sm">Con los siguientes pasos y los honorarios.</p></div>
+      <div class="bg-paper2 p-6"><span class="font-display font-bold text-3xl text-gold/50">03</span><h3 class="font-display font-bold text-lg text-ink mt-2 mb-1">Propuesta por escrito</h3><p class="text-ink2 text-sm">Sin letras chiquitas, sin pagos por fuera.</p></div>
+    </div>
+    <p class="mt-8 text-sm text-steel">Cédula verificable · Contrato por escrito · Atención 24/7</p>
+  </div>
+</main>
+
+<footer class="border-t border-line">
+  <div class="max-w-content mx-auto px-5 sm:px-8 py-8 text-xs text-steel">
+    © <span id="yr"></span> JP Abogados · Tu Consejero Legal®. Justicia al alcance de todos.
+  </div>
+</footer>
+<script>
+  /* 👉 TU NÚMERO DE WHATSAPP — edítalo UNA sola vez aquí (solo dígitos, sin "+"). Ej. 5215512345678 */
+  const WHATSAPP = '520000000000';
+  document.querySelectorAll('a[href*="wa.me/"]').forEach(function(a){
+    a.href = a.href.replace(/wa\.me\/\d+/, 'wa.me/' + WHATSAPP);
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

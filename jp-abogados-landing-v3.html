@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JP Abogados · Tu Consejero Legal · Justicia al alcance de todos</title>
+<meta name="description" content="Despacho de abogados real en México, con cédula y contrato a la vista. Especialistas en cada rama del derecho. Atención 24/7.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#1A1A18',
+        ink2: '#46443E',
+        paper: '#F5F1E8',
+        paper2: '#FFFFFF',
+        cream: '#EFEADD',
+        gold: '#A8843E',
+        goldsoft: '#C5A46D',
+        goldtint: '#EFE4CC',
+        steel: '#6E6B62',
+        line: '#E4DCCB',
+        action: '#1A1A18',
+        actionhover: '#000000',
+        alert: '#9A2B25',
+      },
+      fontFamily: {
+        display: ['"Libre Baskerville"', 'Georgia', 'serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      maxWidth: { content: '1180px' },
+    }
+  }
+}
+</script>
+<style>
+  html{scroll-behavior:smooth;} body{background:#F5F1E8;}
+  .tracking-luxe{letter-spacing:.24em;}
+  .aura{background:
+     radial-gradient(60% 60% at 78% 20%, rgba(197,164,109,.30), transparent 70%),
+     radial-gradient(50% 50% at 95% 60%, rgba(168,132,62,.18), transparent 70%),
+     radial-gradient(40% 60% at 60% 0%, rgba(239,228,204,.6), transparent 70%);}
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1);}
+  .reveal.in{opacity:1;transform:none;}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}html{scroll-behavior:auto;}}
+  ::selection{background:#A8843E;color:#fff;}
+  .float-card{box-shadow:0 18px 50px -22px rgba(26,26,24,.35);}
+  .dash{stroke-dasharray:4 6;stroke:#C9BFA8;fill:none;}
+  .tab-active{background:#1A1A18;color:#F5F1E8;}
+  .grad-card{background:linear-gradient(150deg,#EFE4CC 0%,#F5F1E8 55%,#fff 100%);}
+  .serif-num{font-family:"Libre Baskerville",Georgia,serif;}
+  .font-display{letter-spacing:-0.01em;}
+  /* Evita que los <select> con opciones largas desborden el formulario en móvil */
+  #leadForm input,#leadForm select,#leadForm textarea{width:100%;min-width:0;max-width:100%;}
+  #contacto .grid>*{min-width:0;}
+</style>
+</head>
+<body class="font-body text-ink antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-paper/85 backdrop-blur-md border-b border-line">
+  <div class="max-w-content mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2.5">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2 L16 8 H8 Z" fill="#A8843E"/><path d="M12 9 L12 19 M8 13 L12 9 L16 13" stroke="#A8843E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="font-display font-bold text-xl tracking-wide">JP Abogados</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm text-ink2">
+      <a href="#areas" class="hover:text-gold transition-colors">Áreas</a>
+      <a href="#porque" class="hover:text-gold transition-colors">Por qué JP</a>
+      <a href="#contacto" class="hover:text-gold transition-colors">Contacto</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="https://wa.me/520000000000" class="hidden sm:inline text-sm text-ink2 hover:text-gold transition-colors">WhatsApp 24/7</a>
+      <a href="#contacto" class="text-sm font-semibold bg-ink text-paper px-4 py-2 rounded-full hover:bg-actionhover transition-colors">Cuéntanos tu caso</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 aura"></div>
+  <svg class="absolute inset-0 w-full h-full pointer-events-none hidden lg:block" aria-hidden="true">
+    <path class="dash" d="M620,90 C720,120 760,260 690,330 C640,380 540,360 560,250"/>
+    <path class="dash" d="M880,180 C960,210 980,320 900,360"/>
+    <circle cx="690" cy="92" r="3" fill="#C5A46D"/><circle cx="905" cy="360" r="3" fill="#C5A46D"/>
+  </svg>
+
+  <div class="relative max-w-content mx-auto px-5 sm:px-8 pt-16 pb-20 lg:pt-24 lg:pb-28">
+    <div class="grid lg:grid-cols-[1fr_1fr] gap-12 items-center">
+      <div>
+        <p class="text-[11px] tracking-luxe uppercase text-gold mb-5 reveal">Despacho jurídico · México</p>
+        <h1 class="font-display font-bold text-4xl sm:text-5xl lg:text-6xl leading-[1.08] text-ink reveal">
+          Justicia inmediata,<br><span class="text-gold">cuando más la necesitas.</span>
+        </h1>
+        <p class="mt-6 text-base sm:text-lg text-ink2 leading-relaxed max-w-md reveal">
+          Despachos hay muchos. Coyotes que estafan, también. Nosotros somos el despacho real, con cédula y contrato a la vista, y un especialista para cada rama del derecho. Atención 24/7.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3 reveal">
+          <a href="#contacto" class="text-center bg-ink text-paper font-semibold px-7 py-3.5 rounded-full hover:bg-actionhover transition-colors">Cuéntanos tu caso</a>
+          <a href="https://wa.me/520000000000" class="text-center border border-ink/20 text-ink font-semibold px-7 py-3.5 rounded-full hover:border-gold hover:text-gold transition-colors">WhatsApp 24/7</a>
+        </div>
+      </div>
+
+      <!-- floating cards collage -->
+      <div class="relative h-[420px] sm:h-[460px] reveal">
+        <div class="absolute left-2 top-2 w-52 sm:w-60 rounded-2xl overflow-hidden float-card bg-paper2">
+          <img src="https://picsum.photos/seed/jp-attorney-a/480/520" alt="Abogado de JP Abogados" class="w-full h-44 object-cover grayscale">
+          <div class="p-3">
+            <p class="font-semibold text-sm">Lic. Karen Frame</p>
+            <p class="text-xs text-steel">Derecho Familiar · Mérida</p>
+            <span class="inline-block mt-2 text-[10px] bg-goldtint text-gold px-2 py-0.5 rounded-full">Cédula verificada</span>
+          </div>
+        </div>
+        <div class="absolute right-1 top-20 w-52 sm:w-60 rounded-2xl overflow-hidden float-card bg-paper2">
+          <img src="https://picsum.photos/seed/jp-attorney-b/480/520" alt="Abogada de JP Abogados" class="w-full h-44 object-cover grayscale">
+          <div class="p-3">
+            <p class="font-semibold text-sm">Lic. Justino Pérez</p>
+            <p class="text-xs text-steel">Derecho Penal · CDMX</p>
+            <span class="inline-block mt-2 text-[10px] bg-goldtint text-gold px-2 py-0.5 rounded-full">Atención 24/7</span>
+          </div>
+        </div>
+        <div class="absolute left-6 bottom-2 w-64 rounded-2xl float-card bg-ink text-paper p-4">
+          <div class="flex items-center justify-between">
+            <p class="text-xs text-paper/70">Caso nuevo asignado</p>
+            <p class="font-display text-2xl text-goldsoft">6:42</p>
+          </div>
+          <div class="mt-2 h-px bg-paper/15"></div>
+          <p class="mt-2 text-sm">Especialista en Laboral tomó tu caso. Contrato enviado por escrito.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGO / TRUST STRIP -->
+<section class="border-y border-line bg-paper2">
+  <div class="max-w-content mx-auto px-5 sm:px-8 py-6">
+    <p class="text-center text-xs text-steel mb-5">Lo que distingue a un despacho real de un coyote</p>
+    <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-ink2">
+      <span class="inline-flex items-center gap-2 font-medium"><span class="text-gold">✓</span> Cédula verificable</span>
+      <span class="inline-flex items-center gap-2 font-medium"><span class="text-gold">✓</span> Contrato por escrito</span>
+      <span class="inline-flex items-center gap-2 font-medium"><span class="text-gold">✓</span> Especialista por rama</span>
+      <span class="inline-flex items-center gap-2 font-medium"><span class="text-gold">✓</span> Atención 24/7</span>
+      <span class="inline-flex items-center gap-2 font-medium"><span class="text-gold">✓</span> Sin pagos por fuera</span>
+    </div>
+  </div>
+</section>
+
+<!-- SHOCKING STAT -->
+<section class="py-16 sm:py-20">
+  <div class="max-w-content mx-auto px-5 sm:px-8">
+    <div class="grid md:grid-cols-[1.4fr_1fr] gap-10 items-center">
+      <p class="font-display font-bold text-xl sm:text-2xl lg:text-[1.8rem] leading-snug text-ink reveal">
+        En México casi la mitad de las personas tuvo un problema legal en los últimos dos años, y solo <span class="text-gold">1 de cada 4</span> buscó un abogado.
+      </p>
+      <p class="text-ink2 leading-relaxed reveal">
+        El resto lo dejó pasar, lo "resolvió solo" o cayó con un falso gestor. Hay coyotes que se quedan <span class="text-ink font-semibold">hasta con el 40% de tu dinero</span> por una gestión que nunca cumplen.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS (tabs estilo Lawtrades) -->
+<section id="areas" class="py-16 sm:py-24">
+  <div class="max-w-content mx-auto px-5 sm:px-8">
+    <h2 class="font-display font-bold text-3xl sm:text-4xl leading-[1.12] text-ink reveal">Elige a tu <span class="text-gold">especialista</span><br>para cada rama del derecho</h2>
+    <p class="mt-4 text-ink2 max-w-xl reveal">No un todólogo que improvisa. El abogado exacto que domina tu tipo de caso.</p>
+
+    <div class="mt-8 flex flex-wrap gap-2 reveal" id="tabs">
+      <button class="tab tab-active text-sm font-medium px-4 py-2 rounded-full border border-ink/15 transition" data-tab="familiar">Familiar</button>
+      <button class="tab text-sm font-medium px-4 py-2 rounded-full border border-ink/15 text-ink2 transition" data-tab="penal">Penal</button>
+      <button class="tab text-sm font-medium px-4 py-2 rounded-full border border-ink/15 text-ink2 transition" data-tab="laboral">Laboral</button>
+      <button class="tab text-sm font-medium px-4 py-2 rounded-full border border-ink/15 text-ink2 transition" data-tab="civil">Civil y Mercantil</button>
+      <button class="tab text-sm font-medium px-4 py-2 rounded-full border border-ink/15 text-ink2 transition" data-tab="amparo">Administrativo y Amparo</button>
+    </div>
+
+    <div class="mt-6 rounded-2xl border border-line grad-card overflow-hidden reveal">
+      <div class="grid md:grid-cols-[1.3fr_1fr] items-center">
+        <div class="p-8 sm:p-10">
+          <h3 id="area-title" class="font-display font-bold text-2xl sm:text-3xl text-ink mb-3">Derecho Familiar</h3>
+          <p id="area-desc" class="text-ink2 leading-relaxed max-w-md">Divorcio, pensión alimenticia, custodia y violencia familiar. Cuando lo que está en juego es tu familia, te acompaña un especialista que ya resolvió casos como el tuyo, con reglas claras desde el primer día.</p>
+          <div id="area-tags" class="mt-5 flex flex-wrap gap-2">
+            <span class="text-xs bg-paper2 border border-line px-3 py-1 rounded-full">Divorcio</span>
+            <span class="text-xs bg-paper2 border border-line px-3 py-1 rounded-full">Pensión</span>
+            <span class="text-xs bg-paper2 border border-line px-3 py-1 rounded-full">Custodia</span>
+          </div>
+          <a href="#contacto" class="inline-block mt-7 bg-ink text-paper text-sm font-semibold px-6 py-3 rounded-full hover:bg-actionhover transition-colors">Hablar con un especialista</a>
+        </div>
+        <div class="relative h-64 md:h-full min-h-[280px]">
+          <img id="area-img" src="https://picsum.photos/seed/jp-area-familiar/700/700" alt="Especialista en derecho familiar" class="absolute inset-0 w-full h-full object-cover grayscale">
+          <div class="absolute inset-0" style="background:linear-gradient(90deg,#EFE4CC 0%,transparent 40%)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE (grid 2x2 estilo Lawtrades) -->
+<section id="porque" class="py-16 sm:py-24 bg-paper2 border-y border-line">
+  <div class="max-w-content mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-[1fr_1.1fr] gap-12 items-center">
+      <div>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl leading-[1.12] text-ink reveal">Por qué elegir <span class="text-gold">JP Abogados</span></h2>
+        <div class="mt-10 grid sm:grid-cols-2 gap-x-10 gap-y-8">
+          <div class="reveal">
+            <h3 class="font-semibold text-ink mb-1.5">Un abogado de verdad, no un coyote</h3>
+            <p class="text-ink2 text-[15px] leading-relaxed">Cédula profesional verificable y contrato por escrito desde el inicio. Damos la cara y respondemos por nuestro trabajo.</p>
+          </div>
+          <div class="reveal">
+            <h3 class="font-semibold text-ink mb-1.5">El especialista exacto</h3>
+            <p class="text-ink2 text-[15px] leading-relaxed">Un experto por cada rama. Tu caso lo lleva quien de verdad lo domina, no quien improvisa.</p>
+          </div>
+          <div class="reveal">
+            <h3 class="font-semibold text-ink mb-1.5">Atención 24/7</h3>
+            <p class="text-ink2 text-[15px] leading-relaxed">Los problemas legales no respetan horario. Cuando todo se siente fuera de control, ya estamos de tu lado.</p>
+          </div>
+          <div class="reveal">
+            <h3 class="font-semibold text-ink mb-1.5">Reglas claras, sin sorpresas</h3>
+            <p class="text-ink2 text-[15px] leading-relaxed">Alcance, tiempos y honorarios por escrito antes de avanzar. Sin letras chiquitas, sin pagos por fuera.</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="rounded-2xl border border-line float-card overflow-hidden bg-paper2">
+          <div class="bg-ink text-paper px-5 py-3 flex items-center justify-between">
+            <span class="font-display text-lg">Tu caso, bajo control</span>
+            <span class="text-xs text-paper/60">Hoy</span>
+          </div>
+          <div class="p-6">
+            <p class="text-sm text-steel">Especialista asignado</p>
+            <p class="font-semibold text-ink">Derecho Laboral · Lic. P. Imanilhen</p>
+            <div class="mt-5 grid grid-cols-2 gap-4">
+              <div class="bg-cream rounded-lg p-4"><p class="serif-num text-2xl text-gold">100%</p><p class="text-xs text-steel mt-1">por escrito</p></div>
+              <div class="bg-cream rounded-lg p-4"><p class="serif-num text-2xl text-gold">24/7</p><p class="text-xs text-steel mt-1">disponibilidad</p></div>
+            </div>
+            <div class="mt-4 space-y-2">
+              <div class="flex items-center gap-2 text-sm text-ink2"><span class="text-gold">✓</span> Contrato firmado y entregado</div>
+              <div class="flex items-center gap-2 text-sm text-ink2"><span class="text-gold">✓</span> Cédula del abogado verificada</div>
+              <div class="flex items-center gap-2 text-sm text-ink2"><span class="text-gold">✓</span> Honorarios definidos sin sorpresas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIO -->
+<section class="py-16 sm:py-20">
+  <div class="max-w-content mx-auto px-5 sm:px-8">
+    <div class="rounded-2xl border border-line grad-card p-6 sm:p-10 reveal">
+      <div class="grid md:grid-cols-[auto_1fr] gap-8 items-center">
+        <img src="https://picsum.photos/seed/jp-client/300/300" alt="Cliente de JP Abogados" class="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl object-cover grayscale mx-auto md:mx-0">
+        <div>
+          <p class="font-display text-xl sm:text-2xl leading-snug text-ink">"Llegué con miedo de que me estafaran como ya me había pasado. Aquí me dieron contrato, me explicaron todo y supe siempre con quién hablaba. Eso no tiene precio."</p>
+          <p class="mt-4 text-sm text-steel">Espacio reservado para testimonio real de cliente, con su consentimiento.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL (tarjeta centrada estilo Lawtrades) -->
+<section id="contacto" class="relative overflow-hidden py-16 sm:py-24">
+  <div class="absolute inset-0 aura opacity-70"></div>
+  <div class="relative max-w-content mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-[1fr_1.05fr] gap-12 items-start">
+      <div class="reveal">
+        <p class="text-xs tracking-luxe uppercase text-gold mb-4">Empieza hoy</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-5xl leading-[1.08] text-ink">Tu caso no mejora<br>esperando.</h2>
+        <p class="mt-5 text-ink2 leading-relaxed max-w-md">Cuéntanos qué pasó. Un especialista de tu rama revisa tu caso y te contacta el mismo día con los siguientes pasos y los honorarios, por escrito.</p>
+        <div class="mt-8 space-y-4">
+          <div class="flex items-center gap-3"><span class="grid place-items-center w-10 h-10 rounded-full bg-paper2 border border-gold/40 text-gold">✓</span><span class="text-ink2">Respuesta el mismo día</span></div>
+          <div class="flex items-center gap-3"><span class="grid place-items-center w-10 h-10 rounded-full bg-paper2 border border-gold/40 text-gold">✓</span><span class="text-ink2">Atención 24/7 por WhatsApp</span></div>
+          <div class="flex items-center gap-3"><span class="grid place-items-center w-10 h-10 rounded-full bg-paper2 border border-gold/40 text-gold">✓</span><span class="text-ink2">Información confidencial</span></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <form id="leadForm" class="bg-paper2 rounded-2xl border border-line float-card p-7 sm:p-9" novalidate>
+          <h3 class="font-display font-bold text-2xl text-ink mb-1">Cuéntanos tu caso</h3>
+          <p class="text-steel text-sm mb-6">Te contacta un especialista de tu rama.</p>
+          <div class="space-y-4">
+            <div class="grid gap-1.5">
+              <label for="nombre" class="text-sm text-ink font-medium">Nombre completo</label>
+              <input id="nombre" type="text" required autocomplete="name" class="bg-paper border border-line rounded-lg px-4 py-3 text-ink placeholder-steel/60 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition">
+            </div>
+            <div class="grid gap-1.5">
+              <label for="tel" class="text-sm text-ink font-medium">Teléfono / WhatsApp</label>
+              <input id="tel" type="tel" required autocomplete="tel" placeholder="Para responderte hoy mismo" class="bg-paper border border-line rounded-lg px-4 py-3 text-ink placeholder-steel/60 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition">
+            </div>
+            <div class="grid gap-1.5">
+              <label for="caso" class="text-sm text-ink font-medium">¿Qué tipo de caso tienes?</label>
+              <select id="caso" required class="bg-paper border border-line rounded-lg px-4 py-3 text-ink focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option>Familiar (divorcio, pensión, custodia)</option>
+                <option>Penal (defensa, denuncia, detención)</option>
+                <option>Laboral (despido, finiquito, prestaciones)</option>
+                <option>Civil / Mercantil (contratos, deudas, herencias)</option>
+                <option>Administrativo / Amparo</option>
+                <option>Otro / No estoy seguro</option>
+              </select>
+            </div>
+            <div class="grid gap-1.5">
+              <label for="urgencia" class="text-sm text-ink font-medium">¿Qué tan urgente es?</label>
+              <select id="urgencia" required class="bg-paper border border-line rounded-lg px-4 py-3 text-ink focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option>Es una emergencia (hoy)</option>
+                <option>Esta semana</option>
+                <option>Estoy evaluando opciones</option>
+              </select>
+            </div>
+            <div class="grid gap-1.5">
+              <label for="intencion" class="text-sm text-ink font-medium">¿Buscas contratar un abogado para resolver esto?</label>
+              <select id="intencion" required class="bg-paper border border-line rounded-lg px-4 py-3 text-ink focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option>Sí, quiero resolverlo y estoy listo para contratar</option>
+                <option>Sí, quiero saber costos y cómo procederían</option>
+                <option>Solo estoy informándome por ahora</option>
+              </select>
+            </div>
+            <div class="grid gap-1.5">
+              <label for="detalle" class="text-sm text-ink font-medium">Cuéntanos brevemente qué pasó <span class="text-steel font-normal">(opcional)</span></label>
+              <textarea id="detalle" rows="3" placeholder="Toda la información es confidencial." class="bg-paper border border-line rounded-lg px-4 py-3 text-ink placeholder-steel/60 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition resize-none"></textarea>
+            </div>
+            <label class="flex items-start gap-3 text-sm text-ink2">
+              <input type="checkbox" required class="mt-1 accent-gold w-4 h-4">
+              <span>Acepto el <a href="#" class="text-gold underline underline-offset-2">aviso de privacidad</a> y que JP Abogados me contacte sobre mi caso.</span>
+            </label>
+          </div>
+          <button type="submit" class="mt-6 w-full bg-ink text-paper font-semibold py-3.5 rounded-full hover:bg-actionhover transition-colors">Enviar mi caso</button>
+          <div id="formOk" class="hidden mt-5 border border-gold/50 bg-goldtint rounded-lg p-4 text-center">
+            <p class="font-display text-xl text-gold">Caso recibido</p>
+            <p class="text-ink2 text-sm mt-1">Un especialista te contactará hoy. Si es urgente, escríbenos por WhatsApp.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-paper">
+  <div class="max-w-content mx-auto px-5 sm:px-8 py-14">
+    <div class="grid md:grid-cols-[1.5fr_1fr_1fr] gap-10">
+      <div>
+        <div class="flex items-center gap-2.5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2 L16 8 H8 Z" fill="#C5A46D"/><path d="M12 9 L12 19 M8 13 L12 9 L16 13" stroke="#C5A46D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="font-display font-bold text-xl">JP Abogados</span>
+        </div>
+        <p class="mt-4 text-paper/55 text-sm max-w-xs">Tu Consejero Legal®. Justicia al alcance de todos. Despacho legalmente constituido en México, con cédula verificable. Defensa real, no coyotes.</p>
+      </div>
+      <div>
+        <p class="text-paper/40 text-xs uppercase tracking-luxe mb-4">Áreas</p>
+        <ul class="space-y-2 text-sm text-paper/70">
+          <li><a href="#areas" class="hover:text-goldsoft">Familiar</a></li>
+          <li><a href="#areas" class="hover:text-goldsoft">Penal</a></li>
+          <li><a href="#areas" class="hover:text-goldsoft">Laboral</a></li>
+          <li><a href="#areas" class="hover:text-goldsoft">Civil y Mercantil</a></li>
+          <li><a href="#areas" class="hover:text-goldsoft">Administrativo y Amparo</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-paper/40 text-xs uppercase tracking-luxe mb-4">Contacto</p>
+        <ul class="space-y-2 text-sm text-paper/70">
+          <li><a href="https://wa.me/520000000000" class="hover:text-goldsoft">WhatsApp 24/7</a></li>
+          <li><a href="#contacto" class="hover:text-goldsoft">Cuéntanos tu caso</a></li>
+          <li><a href="#" class="hover:text-goldsoft">Aviso de privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-10 pt-6 border-t border-paper/10 text-paper/35 text-xs">© <span id="yr"></span> JP Abogados · Tu Consejero Legal®. Esta página es informativa y no constituye asesoría jurídica particular hasta la formalización de un contrato de servicios.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/520000000000" aria-label="WhatsApp 24/7" class="fixed bottom-5 right-5 z-50 grid place-items-center w-14 h-14 rounded-full bg-ink text-paper shadow-lg hover:bg-actionhover transition-colors">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.8.8.8-2.7-.2-.3A8 8 0 1112 20zm4.6-6c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.5 6.5 0 01-1.9-1.2 7.2 7.2 0 01-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.5.3-.5v-.5c0-.1-.6-1.5-.8-2s-.4-.4-.6-.4h-.5a1 1 0 00-.7.3A2.9 2.9 0 006 8.9c0 1.7 1.2 3.3 1.4 3.6s2.5 3.8 6 5c.8.3 1.5.5 2 .7.8.2 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+  /* ============================================================
+     👉 TU NÚMERO DE WHATSAPP — edítalo UNA sola vez aquí.
+     Formato internacional, solo dígitos, sin "+" ni espacios.
+     Ej. México: 52 + 10 dígitos  →  5215512345678
+     Aplica a TODOS los botones de WhatsApp de esta página.
+     ============================================================ */
+  const WHATSAPP = '520000000000';
+  document.querySelectorAll('a[href*="wa.me/"]').forEach(function(a){
+    a.href = a.href.replace(/wa\.me\/\d+/, 'wa.me/' + WHATSAPP);
+  });
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4*60)+'ms';io.observe(el);});
+
+  // tabs de areas
+  const areas = {
+    familiar:{t:'Derecho Familiar',d:'Divorcio, pensión alimenticia, custodia y violencia familiar. Cuando lo que está en juego es tu familia, te acompaña un especialista que ya resolvió casos como el tuyo, con reglas claras desde el primer día.',tags:['Divorcio','Pensión','Custodia'],img:'jp-area-familiar'},
+    penal:{t:'Derecho Penal',d:'Defensa, denuncias, detenciones y carpetas de investigación. En el momento más delicado necesitas a un penalista real, con cédula y disponible 24/7, no a alguien que improvisa.',tags:['Defensa','Denuncia','Detención'],img:'jp-area-penal'},
+    laboral:{t:'Derecho Laboral',d:'Despido injustificado, finiquito, prestaciones y conflictos laborales. Recupera lo que te corresponde con un especialista que conoce la ley y la hace valer.',tags:['Despido','Finiquito','Prestaciones'],img:'jp-area-laboral'},
+    civil:{t:'Derecho Civil y Mercantil',d:'Contratos, deudas, rentas, cobranza, herencias y sucesiones. Protege tu patrimonio con reglas claras y por escrito desde el primer día.',tags:['Contratos','Deudas','Herencias'],img:'jp-area-civil'},
+    amparo:{t:'Administrativo y Amparo',d:'Actos de autoridad, multas, trámites y defensa de tus derechos frente al Estado. Del lado de la autoridad hay un equipo; del tuyo, ponemos al especialista exacto.',tags:['Amparo','Multas','Trámites'],img:'jp-area-amparo'}
+  };
+  const tt=document.getElementById('area-title'),dd=document.getElementById('area-desc'),gg=document.getElementById('area-tags'),mm=document.getElementById('area-img');
+  document.querySelectorAll('.tab').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.tab').forEach(b=>{b.classList.remove('tab-active');b.classList.add('text-ink2');});
+      btn.classList.add('tab-active');btn.classList.remove('text-ink2');
+      const a=areas[btn.dataset.tab];
+      tt.textContent=a.t;dd.textContent=a.d;
+      gg.innerHTML=a.tags.map(x=>`<span class="text-xs bg-paper2 border border-line px-3 py-1 rounded-full">${x}</span>`).join('');
+      mm.src=`https://picsum.photos/seed/${a.img}/700/700`;
+    });
+  });
+
+  /* ============================================================
+     CALIFICACIÓN DE LEADS + ENVÍO A SHEETS + REDIRECT POR BANDA
+     Sin n8n. Edita las 2 constantes de abajo y listo.
+     ============================================================ */
+  const WEBHOOK_URL = 'PEGA_AQUI_TU_URL_DE_APPS_SCRIPT';   // termina en /exec
+  const TY = {                                              // tus 3 thank-you pages
+    caliente: '/gracias-prioritario.html',
+    templado: '/gracias.html',
+    frio:     '/gracias-info.html'
+  };
+
+  function calcularScore(d){
+    let s = 0;
+    // FIT - rama (máx 30)
+    if (d.caso === 'Otro / No estoy seguro') s += 10;
+    else if (d.caso) s += 30;            // cualquier rama que atienden
+    // (jurisdicción: si JP atiende todo MX, se asume +20 fijo)
+    s += 20;
+    // INTENT - ¿buscas contratar? (máx 30)
+    if (d.intencion === 'Sí, quiero resolverlo y estoy listo para contratar') s += 30;
+    else if (d.intencion === 'Sí, quiero saber costos y cómo procederían') s += 18;
+    else if (d.intencion === 'Solo estoy informándome por ahora') s += 3;
+    // INTENT - urgencia (máx 20)
+    if (d.urgencia === 'Es una emergencia (hoy)') s += 20;
+    else if (d.urgencia === 'Esta semana') s += 12;
+    else if (d.urgencia === 'Estoy evaluando opciones') s += 4;
+    // NEGATIVO
+    const txt = (d.detalle || '').trim();
+    if (txt.length < 4) s -= 15;          // texto vacío o basura
+    if (d.intencion === 'Solo estoy informándome por ahora' &&
+        d.urgencia === 'Estoy evaluando opciones') s -= 10;  // curioso puro
+    const telOk = (d.tel || '').replace(/\D/g,'').length >= 10;
+    if (!telOk) s -= 25;
+    return s;
+  }
+  function bandaDe(score){
+    if (score >= 80) return {banda:'CALIENTE', url:TY.caliente};
+    if (score >= 55) return {banda:'TEMPLADO', url:TY.templado};
+    return {banda:'FRIO', url:TY.frio};   // <55 (frío y descarte) van a info
+  }
+  function getUTM(k){
+    return new URLSearchParams(location.search).get(k) || '';
+  }
+
+  document.getElementById('leadForm').addEventListener('submit',function(ev){
+    ev.preventDefault();
+    if(!this.checkValidity()){this.reportValidity();return;}
+
+    const d = {
+      nombre:    document.getElementById('nombre').value,
+      tel:       document.getElementById('tel').value,
+      caso:      document.getElementById('caso').value,
+      urgencia:  document.getElementById('urgencia').value,
+      intencion: document.getElementById('intencion').value,
+      detalle:   document.getElementById('detalle').value,
+      utm_source:   getUTM('utm_source'),
+      utm_campaign: getUTM('utm_campaign'),
+      utm_content:  getUTM('utm_content')
+    };
+    const score = calcularScore(d);
+    const { banda, url } = bandaDe(score);
+    d.score = score; d.banda = banda; d.destino = url;
+
+    this.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
+    document.getElementById('formOk').classList.remove('hidden');
+
+    // Enviar a Google Sheets (no bloquea el redirect)
+    if (WEBHOOK_URL.indexOf('http') === 0) {
+      fetch(WEBHOOK_URL, {
+        method:'POST', mode:'no-cors',
+        headers:{'Content-Type':'text/plain;charset=utf-8'},
+        body: JSON.stringify(d)
+      }).catch(function(){});
+    }
+
+    // Redirigir a la thank-you page correcta
+    setTimeout(function(){ window.location.href = url; }, 600);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gracias por escribirnos · JP Abogados</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{ink:'#1A1A18',ink2:'#46443E',paper:'#F5F1E8',paper2:'#FFFFFF',cream:'#EFEADD',gold:'#A8843E',goldsoft:'#C5A46D',goldtint:'#EFE4CC',steel:'#6E6B62',line:'#E4DCCB'},fontFamily:{display:['"Libre Baskerville"','Georgia','serif'],body:['Inter','sans-serif']},maxWidth:{content:'1180px'}}}}
+</script>
+<style>body{background:#F5F1E8;}.font-display{letter-spacing:-.01em;}.tracking-luxe{letter-spacing:.24em;}</style>
+</head>
+<body class="font-body text-ink antialiased">
+<header class="border-b border-line bg-paper/90">
+  <div class="max-w-content mx-auto px-5 sm:px-8 h-16 flex items-center">
+    <a href="/" class="flex items-center gap-2.5">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2 L16 8 H8 Z" fill="#A8843E"/><path d="M12 9 L12 19 M8 13 L12 9 L16 13" stroke="#A8843E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="font-display font-bold text-xl tracking-wide">JP Abogados</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="max-w-content mx-auto px-5 sm:px-8 py-20 sm:py-28 text-center">
+    <span class="inline-flex items-center gap-2 text-xs tracking-luxe uppercase text-gold border border-gold/40 rounded-full px-4 py-1.5 mb-8">Gracias por escribirnos</span>
+    <h1 class="font-display font-bold text-3xl sm:text-5xl leading-[1.1] text-ink max-w-2xl mx-auto">
+      Recibimos tu mensaje. Te enviaremos información sobre tu tipo de caso.
+    </h1>
+    <p class="mt-6 text-ink2 leading-relaxed max-w-xl mx-auto">
+      Para que decidas con claridad, te compartiremos orientación sobre cómo se aborda un caso como el tuyo y qué deberías exigir siempre a un abogado: cédula verificable y contrato por escrito. Cuando estés listo para resolverlo, aquí estamos.
+    </p>
+
+    <div class="mt-12 grid sm:grid-cols-3 gap-4 text-left max-w-3xl mx-auto">
+      <div class="bg-paper2 border border-line rounded-xl p-6"><h3 class="font-display font-bold text-lg text-ink mb-1">Exige cédula</h3><p class="text-ink2 text-sm">Un abogado real la muestra desde la primera llamada.</p></div>
+      <div class="bg-paper2 border border-line rounded-xl p-6"><h3 class="font-display font-bold text-lg text-ink mb-1">Exige contrato</h3><p class="text-ink2 text-sm">Honorarios por escrito antes de pagar un peso.</p></div>
+      <div class="bg-paper2 border border-line rounded-xl p-6"><h3 class="font-display font-bold text-lg text-ink mb-1">Cuidado con el coyote</h3><p class="text-ink2 text-sm">Si pide dinero por adelantado sin papeles, aléjate.</p></div>
+    </div>
+
+    <div class="mt-12">
+      <a href="https://wa.me/520000000000" class="inline-flex items-center gap-2 text-gold font-semibold hover:text-ink transition-colors">¿Tu caso cambió de urgencia? Escríbenos por WhatsApp →</a>
+    </div>
+  </div>
+</main>
+
+<footer class="border-t border-line">
+  <div class="max-w-content mx-auto px-5 sm:px-8 py-8 text-xs text-steel">
+    © <span id="yr"></span> JP Abogados · Tu Consejero Legal®. Justicia al alcance de todos.
+  </div>
+</footer>
+<script>
+  /* 👉 TU NÚMERO DE WHATSAPP — edítalo UNA sola vez aquí (solo dígitos, sin "+"). Ej. 5215512345678 */
+  const WHATSAPP = '520000000000';
+  document.querySelectorAll('a[href*="wa.me/"]').forEach(function(a){
+    a.href = a.href.replace(/wa\.me\/\d+/, 'wa.me/' + WHATSAPP);
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
